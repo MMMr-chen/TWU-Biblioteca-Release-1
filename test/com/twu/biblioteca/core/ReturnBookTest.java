@@ -13,7 +13,7 @@ public class ReturnBookTest {
     @Before
     public void setUp(){
         bookRepository =new BookRepository();
-        returnBook = new ReturnBook();
+        returnBook = new ReturnBook(bookRepository);
     }
     @Test
     public void should_return_correct_when_book_is_avalible(){

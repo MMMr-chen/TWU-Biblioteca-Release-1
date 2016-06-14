@@ -13,7 +13,7 @@ public class CheckOutBookTest {
     @Before
     public void setUp(){
         bookRepository =new BookRepository();
-        checkOutBook = new CheckOutBook();
+        checkOutBook = new CheckOutBook(bookRepository);
     }
     @Test
     public void should_return_correct_when_book_is_avalible(){
